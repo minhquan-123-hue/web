@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="image.html">Image Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </header>
+
+    <main>
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google">
+        </div>
+
+        <form action="https://www.google.com/search" method="get">
+            <div class="search-container">
+                <input type="text" name="q" class="search-bar" autofocus>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" formaction="https://www.google.com/search"
+                    formmethod="get" name="btnI" class="lucky-btn">
+                <!-- Hidden parameter for I'm Feeling Lucky -->
+                <input type="hidden" name="btnI" value="">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div style="text-align: center;">Google Clone for CS50 Web</div>
+    </footer>
+</body>
+
+</html>

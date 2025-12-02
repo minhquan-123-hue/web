@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini MonkeyType</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mini MonkeyType</h1>
+        <div id="timer">60</div>
+        <div id="text-display"></div>
+        <textarea id="input" autofocus placeholder="Start typing..."></textarea>
+        <div class="stats">
+            <span>WPM: <strong id="wpm">0</strong></span>
+            <span>Accuracy: <strong id="accuracy">100%</strong></span>
+        </div>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script type="module" src="script.ts"></script>
+</body>
+
+</html>

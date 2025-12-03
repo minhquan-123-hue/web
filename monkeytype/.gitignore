@@ -1,0 +1,55 @@
+# ===== Tạo ngay file .gitignore trong thư mục gốc dự án =====
+# Chỉ cần copy-paste toàn bộ bên dưới
+
+# Compiled JavaScript (ra thư mục dist)
+dist/
+*.js
+*.js.map
+
+# Nhưng giữ lại nếu bạn muốn commit file JS mẫu (tuỳ bạn)
+# !dist/index.js          # ← bỏ comment dòng này nếu muốn commit file JS đã build
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript cache & build info
+*.tsbuildinfo
+.tscache/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE / Editor
+.vscode/
+  # Nếu bạn KHÔNG muốn chia sẻ settings VSCode thì để nguyên
+  # Nếu MUỐN chia sẻ extensions/recommended thì xóa 2 dòng dưới:
+  !.vscode/extensions.json
+  !.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: nếu bạn dùng Vite/Parcel sau này
+.cache/
+.parcel-cache/
+
+# Nếu bạn để HTML/CSS trực tiếp trong dự án (không build)
+# Không cần ignore gì thêm, cứ commit thoải mái

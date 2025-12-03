@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Quan trọng nhất: ES2022 → class, arrow thật
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
+    "module": "ES2022", // ES modules (import/export)
+    "moduleResolution": "node",
+    "allowJs": true,
+    "outDir": "./dist", // JS sẽ ra thư mục dist
+    "rootDir": "./src", // TS nằm trong src
+    "strict": true, // Bật full type checking
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

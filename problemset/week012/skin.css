@@ -1,0 +1,37 @@
+/* super easy CSS */
+
+/* how to access to HTML elements */
+body {
+    font-family: sans-serif;
+    /* what is padding ? what does it do ? how to use it ?*/
+    padding: 20px;
+}
+
+/* headings are already block by default */
+h1,
+h2 {
+    margin-bottom: 10px;
+}
+
+/* the <a> is inline by default, but inside a <div> it still acts inline unless we force block */
+div a {
+    display: block;
+    /* makes the link look like a full-width block*/
+    padding: 6px;
+    background: #eee;
+    /* what is text-decoration */
+    text-decoration: none;
+    color: black;
+}
+
+/* form label + input: both inline */
+label {
+    margin-right: 10px;
+    /* little spacing */
+}
+
+/* why it access html input like this ? */
+input[type="text"] {
+    padding: 4px;
+    border: 10px solid #979727;
+}

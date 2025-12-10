@@ -1,37 +1,81 @@
-/* super easy CSS */
-
-/* how to access to HTML elements */
 body {
-    font-family: sans-serif;
-    /* what is padding ? what does it do ? how to use it ?*/
-    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f5f5f5;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    /* what is line-height ? */
+    line-height: 1.6;
+    color: #333;
 }
 
-/* headings are already block by default */
 h1,
 h2 {
-    margin-bottom: 10px;
+    margin: 0.5em 0;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.2;
+    /* what is letter spacing ? */
+    letter-spacing: -0.5px;
+    text-align: center;
 }
 
-/* the <a> is inline by default, but inside a <div> it still acts inline unless we force block */
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
 div a {
     display: block;
-    /* makes the link look like a full-width block*/
-    padding: 6px;
-    background: #eee;
+    color: #0066cc;
     /* what is text-decoration */
     text-decoration: none;
-    color: black;
+    font-weight: 500;
+    /* what is transition ? how to use that property ? */
+    transition: color 0.2s ease;
+    text-align: center;
 }
 
-/* form label + input: both inline */
+/* what is :hover */
+div a:hover {
+    color: #0052a3;
+    text-decoration: underline;
+}
+
+/* what is visited */
+div a:visited {
+    color: #663399;
+}
+
 label {
-    margin-right: 10px;
-    /* little spacing */
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    text-align: center;
 }
 
-/* why it access html input like this ? */
 input[type="text"] {
-    padding: 4px;
-    border: 10px solid #979727;
+    width: 100%;
+    /* what is em ? */
+    padding: 0.75em;
+    /* how to use this property (border) */
+    border: 5px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+/* what is focus? how to use it ? */
+input[type="text"]:focus {
+    outline: none;
+    border-color: #0066cc;
+    /* how to use this property */
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1)
 }

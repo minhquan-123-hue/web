@@ -15,17 +15,7 @@ h2 {
     font-weight: 600;
     color: #222;
     line-height: 1.2;
-    /* what is letter spacing ? */
-    letter-spacing: -0.5px;
     text-align: center;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
 }
 
 div a {
@@ -48,7 +38,7 @@ div a:hover {
 /* what is visited */
 div a:visited {
     color: #663399;
-}
+}c
 
 label {
     display: block;
